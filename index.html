@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>#字游戏</title>
+    <script>
+        var myCha=document.getElementById("one");
+        myCha.innerHTML="here";
+    </script>
+
+    <style>
+        table  tr td{
+            border:1px solid #000;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+
+<table>
+    <tbody>
+    <tr>
+        <td id="one"></td>
+        <td id="two"></td>
+        <td id="three"></td>
+    </tr>
+    <tr>
+        <td id="four"></td>
+        <td id="five"></td>
+        <td id="six"></td>
+    </tr>
+    <tr>
+        <td id="seven"></td>
+        <td id="eight"></td>
+        <td id="nine"></td>
+    </tr>
+    </tbody>
+</table>
+<form>
+    <input type="button" value="1" onclick="win()"/>
+    <input type="button" value="2" onclick="win()"/>
+    <input type="button" value="3" onclick="win()"/>
+    <input type="button" value="4" onclick="win()"/>
+    <input type="button" value="5" onclick="win()"/>
+    <input type="button" value="6" onclick="win()"/>
+    <input type="button" value="7" onclick="win()"/>
+    <input type="button" value="8" onclick="win()"/>
+    <input type="button" value="9" onclick="win()"/>
+</form>
+<script>
+    function flag(i) {
+
+
+    }
+    function win() {
+        var myCha1=document.getElementById("one");
+        var myCha2=document.getElementById("two");
+        var myCha3=document.getElementById("three");
+        var myCha4=document.getElementById("four");
+        var myCha5=document.getElementById("five");
+        var myCha6=document.getElementById("six");
+        var myCha7=document.getElementById("seven");
+        var myCha8=document.getElementById("eight");
+        var myCha9=document.getElementById("nine");
+        var myarr=new Array();
+        if(i==1)
+        myCha1.innerHTML="X";
+        myCha1.innerHTML="O";
+        myCha2.innerHTML="X";
+        myCha2.innerHTML="O";
+    }
+
+</script>
+</body>
+</html>
