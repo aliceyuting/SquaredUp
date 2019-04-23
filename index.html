@@ -3,7 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <title>#字游戏</title>
-    <style>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+    <script>
+    $(document).ready(function () {
+        var flag=1;
+        $("#one").click(function () {  /*实现X和O的交互*/
+            if (flag==1){
+                document.getElementById("one").innerHTML="x";
+                flag++;
+            }
+            else{
+                document.getElementById("one").innerHTML="O";
+                flag--;
+            }
+        });
+        $("#two").click(function () {
+            if (flag==1){
+                document.getElementById("two").innerHTML="x";
+                flag++;
+            }
+            else{
+                document.getElementById("two").innerHTML="O";
+                flag--;
+            }
+        });
+        $("#three").click(function () {
+            if (flag==1){
+                document.getElementById("three").innerHTML="x";
+                flag++;
+            }
+            else{
+                document.getElementById("three").innerHTML="O";
+                flag--
+            }
+        });
+        $("#four").click(function () {
+            if (flag==1){
+                document.getElementById("four").innerHTML="x";
+                flag++;
+            }
+            else{
+                document.getElementById("four").innerHTML="O";
+                flag--;
+            }
+        });
+        $("#five").click(function () {
+            if (flag==1){
+                document.getElementById("five").innerHTML="x";
+                flag++;
+            }
+            else{
+                document.getElementById("five").innerHTML="O";
+                flag--;
+            }
+        });
+        $("#six").click(function () {
+            if (flag==1){
+                document.getElementById("six").innerHTML="x";
+                flag++;
+            }
+            else{
+                document.getElementById("six").innerHTML="O";
+                flag--;
+            }
+        })
+        $("#seven").click(function () {
+            if (flag==1){
+                document.getElementById("seven").innerHTML="x";
+                flag++;
+            }
+            else{
+                document.getElementById("seven").innerHTML="O";
+                flag--;
+            }
+        });
+        $("#eight").click(function () {
+            if (flag==1){
+                document.getElementById("eight").innerHTML="x";
+                flag++;
+            }
+            else{
+                document.getElementById("eight").innerHTML="O";
+                flag--;
+            }
+        });
+        $("#nine").click(function () {
+            if (flag==1){
+                document.getElementById("nine").innerHTML="x";
+                flag++;
+            }
+            else{
+                document.getElementById("nine").innerHTML="O";
+                flag--;
+            }
+        });
+    });
+    var myarr=new Array();
+    for()
+</script>
+    <style> /*表格样式*/
         table  tr td{
             border:1px solid #000;
             width: 200px;
@@ -12,7 +110,7 @@
     </style>
 </head>
 <body>
-
+<!--表格-->
 <table>
     <tbody>
     <tr>
@@ -32,33 +130,16 @@
     </tr>
     </tbody>
 </table>
-<script>
-       var eventOne=function () {
-           myCha1.innerHTML="X";
-       };
-       var eventTwo=function () {
-           myCha1.innerHTML="O";
-       };
-       window.onload=function () {
-           var myCha1=document.getElementById("one");
-           myCha1.addEventListener("click",eventOne);
-           myCha1.addEventListener("click",eventTwo);
-       }
-      
-        var myCha2=document.getElementById("two");
-        var myCha3=document.getElementById("three");
-        var myCha4=document.getElementById("four");
-        var myCha5=document.getElementById("five");
-       var myCha6=document.getElementById("six");
-        var myCha7=document.getElementById("seven");
-        var myCha8=document.getElementById("eight");
-        var myCha9=document.getElementById("nine");
-
-        
-        myCha2.innerHTML="X";
-        myCha2.innerHTML="O";
-
-
-</script>
 </body>
 </html>
+/*document.addEventListener("click",eventOne);
+function eventOne(){
+
+document.getElementById("one").innerHTML="X";
+}
+document.addEventListener("click",eventTwo);
+function eventTwo() {
+document.getElementById("one").innerHTML="O";
+}  只能输出0，js的事件监听不懂，改用jq。
+
+*/
